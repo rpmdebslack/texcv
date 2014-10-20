@@ -1,0 +1,97 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Original Template:
+% Classicthesis-Styled CV
+% LaTeX Template
+% Version 1.0 (22/2/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro Plasmati
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+% 
+% Modified for a Classicthesis-Styled Cover Letter
+% Version 1.0 (20/10/2014)
+% Author:
+% Bhargav P Swaminathan
+% 
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{scrartcl}
+
+\usepackage[nochapters]{classicthesis} % Use the classicthesis style for the style of the document
+\usepackage[LabelsAligned]{currvita} % Use the currvita style for the layout of the document
+
+\usepackage[T1]{fontenc} % For special characters
+\usepackage{ragged2e} % For justifying
+\usepackage{lipsum} % Please remove this, along with the \lipsum command
+
+% Page Margins. Feel free to play around with them.
+\usepackage[verbose]{geometry}
+\geometry{top=25pt, left=70pt, right=70pt,
+  textwidth=450pt,textheight=900pt,
+  heightrounded}
+
+\renewcommand{\cvheadingfont}{\LARGE\color{Maroon}} % Font color of your name at the top
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\hypersetup{colorlinks, breaklinks, urlcolor=Maroon, linkcolor=Maroon} % Set link colors
+
+% Commands for parts of the letter
+\newcommand{\ToAddr}[1]{\vspace{2.5em}\noindent To,\\ #1}
+
+\newcommand{\LetterDate}[1]{\hfill #1\par\vspace{2em}}
+
+\newcommand{\Subject}[1]{\hangindent=2em\hangafter=0\justifying\textbf{Sub: #1}\par\vspace{0.5em}}
+
+\newcommand{\Opening}[1]{\justifying #1\par\vspace{1em}}
+
+\newcommand{\Sign}[1]{\vspace{2em}\noindent\textbf{Sincerely yours,}\vspace{1em}\\#1\par\vspace{0.5em}}
+
+\newcommand{\Encl}[1]{\vspace{2em}\noindent\footnotesize\color{Maroon}\emph{Encl. #1}\par\vspace{0.5em}}
+
+\renewcommand{\cfoot}[3]{\centering\normalsize\vspace{4.5em} #1\\#2\ $\cdotp$\ #3}
+
+%----------------------------------------------------------------------------------------
+\begin{document}
+\date{} % To force TeX not to display a date at the bottom.
+
+\thispagestyle{empty}
+\centering
+\begin{cv}{%\spacedallcaps{\textnormal{Bhargav} P. Swaminathan}\\
+\textls[140]{Bhargav\ \ Prasanna\ \ SWAMINATHAN}}\vspace{0.75em}
+{\large\color{Maroon} PhD Student\ $\cdotp$\ Teaching Assistant\ $\cdotp$\ University of Grenoble-Alpes}\vspace{1.5em} % Your name
+
+\justifying
+
+\ToAddr{The HR Manager,\\ Company W,\\ Address X,\\ City Y, Country Z.\\}
+
+\vspace{1em}
+
+\LetterDate{\today}
+
+\Subject{Cover letter blah blah \^\ \^}
+
+\vspace{1em}
+\ \\
+\Opening{Dear Madam/Sir,}
+
+\lipsum[1-3]
+
+\Sign{Bhargav Swaminathan}
+\Encl{CV}
+\cfoot{D010\ $\cdotp$\ ENSE3\ $\cdotp$\ Rue des Math\'{e}matiques\ $\cdotp$\ 38402 St.~Martin d'H\`{e}res\ $\cdotp$\ France}{\href{mailto:bhargav-prasanna.swaminathan@g2elab.grenoble-inp.fr}{bhargav-prasanna.swaminathan@g2elab.grenoble-inp.fr}}{+33 (0)6 12 34 57 89}
+
+\end{cv}
+
+\end{document}
